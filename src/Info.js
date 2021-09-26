@@ -11,7 +11,7 @@ const Info = () => {
       console.log("cleanup");
       console.log("name : ", name); //업데이트되기 직전의 값
     };
-  });
+  }, []);
 
   const onChangeName = (e) => {
     setName(e.target.value);
